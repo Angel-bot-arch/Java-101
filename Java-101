@@ -1,1 +1,38 @@
+Pratice Problems
+1. public class Main{
+    public static int counterOccurences (var arr, int n){
+      int n = n
+     for (int num : arr ) {
+       if (num == n){
+        }
+    }
+    return num
+     }
+   }
 
+2.  public static int[] reverseArray (int[] arr){
+        int[] reversedArray = new int[arr.length];
+    for (int x = 0; x < arr.length; x++){
+       reversedArray[x] = arr[arr.length]
+    }
+    return reversedArray
+} 
+
+3. public static double[][] sumGrid(double[][] grid){
+    double sum = 0;   
+for (double x = 0; x < grid.length; x++){
+        for (double y = 0; y < grid[x].length; y++){
+            sum += grid[x][y];
+       }
+   }
+    return sum;
+ }
+
+4. public static void fib (String[] args){
+    int sum = 0;
+   int [] fib = {0, 1, 1, 2, 3, 5, 8, 13, 21, 34}
+   for (int n : fib){
+        sum = sum + n;
+   }
+return sum
+ }
