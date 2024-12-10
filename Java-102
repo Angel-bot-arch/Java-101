@@ -58,6 +58,62 @@ Diagonal:
     }
 }
 
+Right Angle: 
+    public class Right Triangle implements Shape{
+        public final Point corner; 
+        public final double sideLength;
+
+	public Right Triangle(Point corner, double sideLength) {
+		this.corner = corner;
+		this.sideLength = sideLength;
+	}
+
+	public double area() {
+		// write this
+	}
+	
+	public double perimeter() {
+		// write this
+	}
+	
+
+	public boolean isInside(Point p) {
+		double xDist = p.x - corner.x;
+		double yDist = p.y - corner.y;
+		return 0 < xDist && xDist < sideLength &&
+			   0 < yDist && yDist < sideLength;
+	}
+
+
+	public boolean isOn(Point p) {
+		// write this
+	}
+	
+
+	public Right Triangle translate(double x, double y) {
+		// write this
+	}
+
+	
+	public Right Triangle scale(double k) {
+		return new Right Triangle(corner, sideLength * k);
+	}
+
+	public Point[] corners() {
+		// write this
+	}
+
+	@Override
+	public String toString() {
+		return "(corner: " + corner + "; side length: " + sideLength + ")";
+	}
+}
+
+
+
+    }
+
+
 returnAll: 
     public static void returnAll(LibraryItem[] items){
         for(LibraryItem item : items){
